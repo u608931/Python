@@ -8,6 +8,10 @@ Max U(c1;c2) = [tu(c1) + (1 -t)*p*u(c2)]
 With
  p=1/1+kD
 Where k is a parameter that indicates the degree of discounting and D is the number of weeks of delay. This is the hyperbolic discounting factor.
-On the other hand, the exponential discounting factor used in time consistent models is p'=e(^-kD)
-We use Python to evaluate these two functional specifications and compare the resulting discounting factors.
+On the other hand, the exponential discounting factor used in time consistent models is p'=e^(-kD)
+We use Python to evaluate these two functional specifications and compare the resulting discounting factors. We assume k=1 for simplicity.
+The discounting factor of next week (n=1) with respect with today(n=0) for the exponential discounting is e^(-1)/e(^-0)=1/e
+The discounting factor of 12 weeks from now (n=12) with respect with 11 weeks from now (n=11)is e^(-12)/e^(-11)=1/e
+So this is what we mean by "consistent preferences"= constant delta of discount factor for the same time span (one week)
+However, with hyperbolic discounting we can see that 
 We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting factor tends to 1, so the present value of a reward in the far future is almost zero according to hyperbolic discounting.
