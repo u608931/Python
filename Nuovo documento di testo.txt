@@ -1,0 +1,12 @@
+
+However, the authors do not specify the functional form of this discount factor, and we could assume they use exponential discounting, the standard model assuming consistent preferences over time. Although this is the most commonly used model in economics because of its simplicity, other models have shown to describe the empirical reality better (Frederik et al., 2002). 
+Exponential discounting assumes that the marginal rate of substitution between consumption in different time periods is only dependent on the time interval between the two time periods. In other words, the discount rate should be constant over time: 1 / (1+K)t. However, empirical studies such as Thaler (1981) show that often people show time inconsistent tendencies. Most people prefer $50 today to $55 tomorrow while preferring $55 in 366 days to $50 in 365 days. Behavioral economists developed the hyperbolic discounting model to incorporate this human tendency for time inconsistent behavior. In this model, the discounting factor depends on both the length of the delay and on the timing of the delay. As a result, hyperbolic discounting discounts future rewards more than exponential discounting for short delays but less for long delays. This makes it more useful to predict actual human behavior.
+As Diamond and Dybvig (1983) pointed out, bank runs can occur due to self-fulfilling expectations of the behavior of other individuals. Hyperbolic discounting and time inconsistent models try to capture the variations in degree of patience across time. To get a better empirical description of bank runs it might be beneficial to incorporate the hyperbolic discounting assumption. It might be possible that individuals after learning their type at T=1 still behave contrary to their type.
+Our model should be therefore integrated as follows:
+Max U(c1;c2) = [tu(c1) + (1 -t)*p*u(c2)]
+With
+ p=1/1+kD
+Where k is a parameter that indicates the degree of discounting and D is the number of weeks of delay. This is the hyperbolic discounting factor.
+On the other hand, the exponential discounting factor used in time consistent models is p'=e(^-kD)
+We use Python to evaluate these two functional specifications and compare the resulting discounting factors.
+We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting factor tends to 1, so the present value of a reward in the far future is almost zero according to hyperbolic discounting.
