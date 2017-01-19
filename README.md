@@ -9,14 +9,19 @@ Exponential discounting assumes that the marginal rate of substitution between c
 As Diamond and Dybvig (1983) pointed out, bank runs can occur due to self-fulfilling expectations of the behavior of other individuals. Hyperbolic discounting and time inconsistent models try to capture the variations in degree of patience across time. 
 To get a better empirical description of bank runs it might be beneficial to incorporate the hyperbolic discounting assumption. It might be possible that individuals after learning their type at T=1 still behave contrary to their type.
 Our model should be therefore integrated as follows:
+
 Max U(c1;c2) = [tu(c1) + (1 -t)*p*u(c2)]
+
 With
  p=1/1+kD
+ 
 Where k is a parameter that indicates the degree of discounting and D is the number of weeks of delay. This is the hyperbolic discounting factor.
 On the other hand, the exponential discounting factor used in time consistent models is p'=e^(-kD)
 We use Python to evaluate these two functional specifications and compare the resulting discounting factors. We assume k=1 for simplicity.
-The discounting factor of next week (n=1) with respect to today(n=0) for the exponential discounting is e^(-1)/e(^-0)=1/e
-The discounting factor of 12 weeks from now (n=12) with respect to 11 weeks from now (n=11)is e^(-12)/e^(-11)=1/e
+The discounting factor of next week (n=1) with respect to today(n=0) for the exponential discounting is 
+e^(-1)/e(^-0)=1/e
+The discounting factor of 12 weeks from now (n=12) with respect to 11 weeks from now (n=11)is 
+e^(-12)/e^(-11)=1/e
 So this is what we mean by "consistent preferences"= constant delta of discount factor for the same time span (one week)
 However, with hyperbolic discounting we can see that the discounting factor of next week with respect to today is 1/(1+1)/(1/(1)=0,5, while the discounting factor of 12 weeks from now with respect to 11 weeks is (1/13)/(1/12)=12/13=0,92
 We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting 
