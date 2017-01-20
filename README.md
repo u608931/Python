@@ -37,5 +37,67 @@ We can see that for low Ds, that is for a short time delay, the discounting fact
 | 2     | 0,367 | 0,66    |
 | 12    | 0,367 | 0,923   |
 | 40    | 0,367 | 0,975   |
-
-
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [],
+   "source": [
+    "def U(c1,c2,sign=1.0):\n",
+    "    return sign*(t*u(c1)+(1-t)*p*u(c2))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {
+    "collapsed": false
+   },
+   "outputs": [
+    {
+     "ename": "SyntaxError",
+     "evalue": "invalid syntax (<ipython-input-40-c87ebcad174e>, line 7)",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-40-c87ebcad174e>\"\u001b[0;36m, line \u001b[0;32m7\u001b[0m\n\u001b[0;31m    'jac' : lambda x: np.array([-t, 1.0]))\u001b[0m\n\u001b[0m        ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+     ]
+    }
+   ],
+   "source": [
+    "def func_deriv(c1,c2,sign=1.0):\n",
+    "    dfdc1 = sign*(t*u)\n",
+    "    dfdc2 = sign*((1-t)*p*u)\n",
+    "    return np.array([dfdc1,dfdc2])\n",
+    "cons=({'type': 'ineq',\n",
+    "     'fun' : lambda x: np.array([x-tc1])\n",
+    "     'jac' : lambda x: np.array([-t, 1.0])]\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "anaconda-cloud": {},
+  "kernelspec": {
+   "display_name": "Python [conda root]",
+   "language": "python",
+   "name": "conda-root-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.5.2"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 1
+}
