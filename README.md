@@ -26,7 +26,10 @@ The discounting factor of 12 weeks from now (n=12) with respect to 11 weeks from
 e^(-12)/e^(-11)=1/e
 So this is what we mean by "consistent preferences"= constant delta of discount factor for the same time span (one week)
 However, with hyperbolic discounting we can see that the discounting factor of next week with respect to today is 1/(1+1)/(1/(1)=0,5, while the discounting factor of 12 weeks from now with respect to 11 weeks is (1/13)/(1/12)=12/13=0,92
-We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting 
+We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting factor tends to 1, so the present value of a reward in the far future is almost zero according to hyperbolic discounting.
+
+
+
 
 | weeks | d_exp | d_hyper |
 |-------|-------|---------|
