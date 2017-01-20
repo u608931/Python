@@ -36,4 +36,6 @@ We can see that for low Ds, that is for a short time delay, the discounting fact
 | 1     | 0,367 | 0,5     |
 | 2     | 0,367 | 0,66    |
 | 12    | 0,367 | 0,923   |
-| 40    | 0,367 | 0,975   
+| 40    | 0,367 | 0,975   |
+
+
