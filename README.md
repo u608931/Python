@@ -1,6 +1,7 @@
 # Python
 Python/Untitled-1.ipynb 
 <H1>Motivation<H/1>
+
 We start from the assumptions of the paper by Diamond and Dybvig to develop a few extensions to their theoretical model that seem to fit the observed mechanisms of bank runs. Specifically, we considered that some insights from behavioral economics that use a hyperbolic discounting factor might help to improve the quality of the standard model on bank runs. An improved model of bank runs will make it possible for banks and/or policy makers to act in times of financial distress. Moreover, we decided to use Python as the main platform to develop our work because it is a great tool to formalize our mathematical formulations and visually explore our results. 
 We will begin with a description of the standard model by making ad hoc use of variables and constraints to solve the optimization problem of allocation and consumption in different time periods. We will show that banks provide improved distribution efficiency than autarky, but bank runs equilibria are also possible, which are potential catastrophes and much worse than autarky.
 
@@ -26,8 +27,10 @@ e^(-12)/e^(-11)=1/e
 So this is what we mean by "consistent preferences"= constant delta of discount factor for the same time span (one week)
 However, with hyperbolic discounting we can see that the discounting factor of next week with respect to today is 1/(1+1)/(1/(1)=0,5, while the discounting factor of 12 weeks from now with respect to 11 weeks is (1/13)/(1/12)=12/13=0,92
 We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting 
+
 | weeks | d_exp | d_hyper |
 |-------|-------|---------|
 | 1     | 0,367 | 0,5     |
 | 2     | 0,367 | 0,66    |
 | 12    | 0,367 | 0,923   |
+| 40    | 0,367 | 0,975   
