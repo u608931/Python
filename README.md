@@ -1,10 +1,10 @@
 # Python
 Python/Untitled-1.ipynb 
 <H1>Motivation<H/1>
-# We start from the assumptions of the paper by Diamond and Dybvig to develop a few extensions to their theoretical model that seem to fit the observed mechanisms of bank runs. Specifically, we considered that some insights from behavioral economics that use a hyperbolic discounting factor might help to improve the quality of the standard model on bank runs. An improved model of bank runs will make it possible for banks and/or policy makers to act in times of financial distress. Moreover, we decided to use Python as the main platform to develop our work because it is a great tool to formalize our mathematical formulations and visually explore our results. 
+We start from the assumptions of the paper by Diamond and Dybvig to develop a few extensions to their theoretical model that seem to fit the observed mechanisms of bank runs. Specifically, we considered that some insights from behavioral economics that use a hyperbolic discounting factor might help to improve the quality of the standard model on bank runs. An improved model of bank runs will make it possible for banks and/or policy makers to act in times of financial distress. Moreover, we decided to use Python as the main platform to develop our work because it is a great tool to formalize our mathematical formulations and visually explore our results. 
 We will begin with a description of the standard model by making ad hoc use of variables and constraints to solve the optimization problem of allocation and consumption in different time periods. We will show that banks provide improved distribution efficiency than autarky, but bank runs equilibria are also possible, which are potential catastrophes and much worse than autarky.
 
-#Extending the existing model using some insights from behavioural economics
+Extending the existing model using some insights from behavioural economics
 So far we explained and simulated the standard Diamond and Dybvig model without making any assumption about the discounting technique used.Indeed, the authors do not specify the functional form of their discount factor, and we could assume that they use exponential discounting, the standard model which implies consistent preferences over time. Although this is the most commonly used model in economics because of its simplicity, other models have shown to describe the empirical reality better (Frederik et al., 2002). 
 Exponential discounting assumes that the marginal rate of substitution between consumption in different time periods is only dependent on the time interval between the two time periods. In other words, the discount rate should be constant over time: 1 / (1+K)t. However, empirical studies such as Thaler (1981) show that often people show time inconsistent tendencies. Most people prefer $50 today to $55 tomorrow while preferring $55 in 366 days to $50 in 365 days. Behavioral economists developed the hyperbolic discounting model to incorporate this human tendency for time inconsistent behavior. In this model, the discounting factor depends on both the length of the delay and on the timing of the delay. As a result, hyperbolic discounting discounts future rewards more than exponential discounting for short delays but less for long delays. This makes it more useful to predict actual human behavior.
 As Diamond and Dybvig (1983) pointed out, bank runs can occur due to self-fulfilling expectations of the behavior of other individuals. Hyperbolic discounting and time inconsistent models try to capture the variations in degree of patience across time. 
@@ -26,3 +26,8 @@ e^(-12)/e^(-11)=1/e
 So this is what we mean by "consistent preferences"= constant delta of discount factor for the same time span (one week)
 However, with hyperbolic discounting we can see that the discounting factor of next week with respect to today is 1/(1+1)/(1/(1)=0,5, while the discounting factor of 12 weeks from now with respect to 11 weeks is (1/13)/(1/12)=12/13=0,92
 We can see that for low Ds, that is for a short time delay, the discounting factor is similar, but as we increase D, the hyperbolic discounting 
+| weeks | d_exp | d_hyper |
+|-------|-------|---------|
+| 1     | 0,367 | 0,5     |
+| 2     | 0,367 | 0,66    |
+| 12    | 0,367 | 0,923   |
