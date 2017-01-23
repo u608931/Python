@@ -2,17 +2,7 @@
 
    # Analyzing and extending the Diamond and Dybvig model with some insights from Behavioural Economics"
    
- | Name             | ANR   | 
- |------------------|-------|
- |Ryan Collier      |       | 
- |Jan Machacek      |       | 
- |Carlotta Varriale | 608931| 
- 
-     Ryan Collier ()",
-    "* Jan Machacek ()",
-    "* Carlotta Varriale (608931)"
-   
-    "###### (*) Final assignment for the Course Applied Economic Analysis, 31/01/2017"
+   #Final assignment for the Course Applied Economic Analysis, 31/01/2017"
   
    #Motivation
 
