@@ -1,4 +1,5 @@
-Python{
+
+{
  "cells": [
   {
    "cell_type": "markdown",
@@ -20,7 +21,7 @@ Python{
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "###### (*) Third assignment for the course Methods: Numerical Simulation, April 15th, 2016. We thank prof. Boone for his help on the fixed-point algorithm and numerous tips."
+    "###### (*) Final assignment for the Course Applied Economic Analysis, 31/01/2017"
    ]
   },
 
