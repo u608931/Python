@@ -1,8 +1,14 @@
 
 
-    "# Analyzing and extending the Diamond and Dybvig model with some insights from Behavioural Economics"
+   # Analyzing and extending the Diamond and Dybvig model with some insights from Behavioural Economics"
+   
+ | Name             | ANR   | 
+ |------------------|-------|
+ |Ryan Collier      |       | 
+ |Jan Machacek      |       | 
+ |Carlotta Varriale | 608931| 
  
-    "* Ryan Collier ()",
+     Ryan Collier ()",
     "* Jan Machacek ()",
     "* Carlotta Varriale (608931)"
    
