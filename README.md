@@ -1,4 +1,28 @@
-Python
+Python{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "# Analyzing and extending the Diamond and Dybvig model with some insights from Behavioural Economics"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "* Ryan Collier ()",
+    "* Jan Machacek ()",
+    "* Carlotta Varriale (608931)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "###### (*) Third assignment for the course Methods: Numerical Simulation, April 15th, 2016. We thank prof. Boone for his help on the fixed-point algorithm and numerous tips."
+   ]
+  },
 
 #Motivation
 
